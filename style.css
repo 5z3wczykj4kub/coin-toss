@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .coin {
@@ -174,8 +174,31 @@ button:focus {
     display: block;
 }
 
+.warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #b4063a;
+    color: #fff;
+    display: none;
+}
+
 @media (min-width: 400px) {
     button:hover #toss-icon path {
         fill: #b4063a;
+    }
+}
+
+@media (max-height: 500px) {
+    .warning {
+        display: flex;
     }
 }
