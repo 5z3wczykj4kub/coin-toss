@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Coin Toss</title>
+</head>
+<body>
+    <div class="burger">
+        <div class="burger__box">
+            <div class="burger__line"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <p>Choose a coin</p>
+            <ul>
+                <li><img class="sidebar__navigation__coins" src="images/euro-a-side.png"></li>
+                <li><img class="sidebar__navigation__coins" src="images/2-euro-a-side.png"></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="backdrop"></div>
+    <div class="coin">
+        <div class="heads">
+            <img src="images/euro-a-side.png">
+        </div>
+        <div class="tails">
+            <img src="images/euro-b-side.png">
+        </div>
+    </div>
+    <button>
+        <svg id="toss-icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="m504.498 152.01c-7.175-4.144-16.349-1.684-20.49 5.49-12.407 21.488-39.983 28.877-61.471 16.471-7.175-4.145-16.349-1.684-20.49 5.49-4.142 7.174-1.684 16.348 5.49 20.49 11.569 6.679 24.402 10.091 37.402 10.091 6.508 0 13.06-.856 19.513-2.585 19.342-5.183 35.514-17.598 45.537-34.958 4.141-7.173 1.683-16.347-5.491-20.489z"/>
+                <path d="m440 275.75c0-18.64-15.11-33.75-33.75-33.75h-106.938l32.315-43.087c12.802-17.07 11.105-40.956-3.983-56.044-16.25-16.25-42.423-16.798-59.339-1.242l-112.906 103.824-19.399 14.549c-10.386 7.789-23.018 12-36 12h-85c-8.284 0-15 6.716-15 15v180c0 8.284 6.716 15 15 15h85c12.969 0 25.597 4.19 35.969 11.977 15.482 11.622 34.672 18.023 54.031 18.023h176.25c18.64 0 33.75-15.11 33.75-33.75 0-18.64-15.11-33.75-33.75-33.75h20c18.64 0 33.75-15.11 33.75-33.75 0-18.64-15.11-33.75-33.75-33.75h20c18.64 0 33.75-15.11 33.75-33.75 0-18.64-15.11-33.75-33.75-33.75 18.64 0 33.75-15.11 33.75-33.75z"/>
+                <path d="m505.911 24.922c-16.823-29.138-62.335-33.294-103.613-9.462s-60.435 65.324-43.612 94.462 62.334 33.293 103.612 9.462 60.435-65.325 43.613-94.462z"/>
+            </g>
+        </svg>
+    </button>
+</body>
+</html>
