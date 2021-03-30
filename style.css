@@ -1,3 +1,8 @@
+:root {
+    --secondary-color-v1: #b4063a;
+    --secondary-color-v2: #2c2c2c;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -7,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .coin {
@@ -78,7 +83,7 @@ button:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-100%);
-    transition: background-color .1s;
+    transition: background-color .2s;
 }
 
 .burger__line::before {
@@ -88,7 +93,7 @@ button:focus {
     height: 4px;
     position: absolute;
     top: -10px;
-    transition: transform .4s;
+    transition: transform .4s, background-color .2s;
 }
 
 .burger__line::after {
@@ -98,7 +103,7 @@ button:focus {
     height: 4px;
     position: absolute;
     top: 10px;
-    transition: transform .4s;
+    transition: transform .4s, background-color .2s;
 }
 
 .burger--active .burger__line {
@@ -107,16 +112,18 @@ button:focus {
 
 .burger--active .burger__line::before {
     transform: translateY(10px) rotate(45deg);
+    background-color: #fff;
 }
 
 .burger--active .burger__line::after {
     transform: translateY(-10px) rotate(-45deg);
+    background-color: #fff;
 }
 
 .sidebar {
     width: 300px;
     height: 100vh;
-    background-color: #b4063a;
+    background-color: var(--secondary-color-v2);
     position: fixed;
     z-index: 200;
     top: 0;
@@ -137,8 +144,8 @@ button:focus {
 }
 
 .sidebar__navigation p {
-    color: #fff;
     font-size: 1.4rem;
+    color: #fff;
 }
 
 .sidebar__navigation img {
@@ -149,7 +156,7 @@ button:focus {
 }
 
 .sidebar__navigation img:hover {
-    opacity: .8;
+    opacity: .6;
 }
 
 .sidebar__navigation ul {
@@ -186,14 +193,14 @@ button:focus {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background-color: #b4063a;
-    color: #fff;
+    background-color: var(--secondary-color-v2);
     display: none;
+    color: #fff;
 }
 
 @media (min-width: 400px) {
     button:hover #toss-icon path {
-        fill: #b4063a;
+        fill: var(--secondary-color-v2);
     }
 }
 
